@@ -1,21 +1,18 @@
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class Main {
 
-    public static void main(String[] args) throws Exception {
+  public static void main(String[] args) throws Exception {
+
+    MyVideo myVideo = new MyVideo();
+    WatchCounter watchCounter = new ComedyWatchCounter();
+
+    myVideo.setWatchCount(5);
+
+    myVideo.setCategory(Category.GAMING);
+    System.out.println(watchCounter.getValue(myVideo));
 
 
-        List<Video> playList = new ArrayList<>();
-        playList.add(new Video());
-        playList.add(new PremiumVideo());
 
-        for(Video video: playList)
-            video.playAdd();
-
-        VideoService videoService = new VideoService(new GamingVideoEarnCalculator());
-        videoService.calculateEarnings(new Video());
-
-
-    }
+  }
 }

@@ -4,7 +4,7 @@ public class BaseVideo {
     private String url;
     private int watchCount;
     private int videoLength;
-    private Video.Category category;
+    private Category category;
 
     public int watchTimeEarning(Video video) {
 

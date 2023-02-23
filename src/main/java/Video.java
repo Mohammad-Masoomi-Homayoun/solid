@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-@Log4j
+
 @Data
 public class Video {
 
@@ -58,12 +58,6 @@ public class Video {
         return;
     }
 
-    enum Category {
-        GAMING,
-        EDUCATIONAL,
-        DOCUMENTARY,
-        SCI_FI
-    }
 
 
 }
